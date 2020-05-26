@@ -1,0 +1,65 @@
+/*自定义图标样式*/
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user:before {
+    content: "";
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user.el-icon-teamorganization {
+    background: url(../../src/assets/images/team/teamorganization.png) no-repeat;
+    background-size: 90% 90%;
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user.el-icon-member {
+    background: url(../../src/assets/images/team/teammumber.png) no-repeat;
+    background-size: 90% 90%;
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user.el-icon-roles {
+    background: url(../../src/assets/images/team/teamroles.png) no-repeat;
+    background-size: 90% 90%;
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user.el-icon-msg {
+    background: url(../../src/assets/images/team/teammsg.png) no-repeat;
+    background-size: 90% 90%;
+}
+
+.teamStylesoutline .teamStyles /deep/ .icons.el-icon-user.el-icon-logs {
+    background: url(../../src/assets/images/team/teamlogs.png) no-repeat;
+    background-size: 83% 83%;
+}
+
+
+/*选中的效果*/
+
+.teamStylesoutline .teamStyles.active /deep/ .icons.el-icon-user.el-icon-teamorganization {
+    background: url(../../src/assets/images/team/teamorganizationopen.png) no-repeat;
+    background-size: 83% 83%;
+}
+
+.teamStylesoutline .teamStyles.active /deep/ .icons.el-icon-user.el-icon-member {
+    background: url(../../src/assets/images/team/teammumberopen.png) no-repeat;
+    background-size: 83% 83%;
+}
+
+.teamStylesoutline .teamStyles.active /deep/ .icons.el-icon-user.el-icon-roles {
+    background: url(../../src/assets/images/team/teamrolesopen.png) no-repeat;
+    background-size: 83% 83%;
+}
+
+.teamStylesoutline .teamStyles.active /deep/ .icons.el-icon-user.el-icon-msg {
+    background: url(../../src/assets/images/team/teammsgopen.png) no-repeat;
+    background-size: 83% 83%;
+}
+
+.teamStylesoutline .teamStyles.active /deep/ .icons.el-icon-user.el-icon-logs {
+    background: url(../../src/assets/images/team/teamlogsopen.png) no-repeat;
+    background-size: 83% 83%;
+}

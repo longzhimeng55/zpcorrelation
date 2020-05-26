@@ -1,0 +1,773 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            html,
+            body,
+            #app,
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                min-width: 1220px;
+                overflow-x: auto;
+            }
+            
+            body {
+                font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+                font-size: 12px;
+                line-height: 1.66666667;
+                color: #333;
+                background: #f0f1f4;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            a {
+                text-decoration: none
+            }
+            
+            .project .projectStyles {
+                border-left: 4px solid #484d5e;
+            }
+            
+            .project .active {
+                border-left: 4px solid #7B7DE5;
+            }
+            
+            .el-progress-bar__inner {
+                background: #7b7de5;
+            }
+            
+            .el-progress-bar__innerText {
+                display: none;
+            }
+            
+            .el-dropdown:focus {
+                outline: 0；
+            }
+            
+            .el-input__inner {
+                border-radius: 4px;
+                border: 1px solid #E5E9F6;
+            }
+            
+            .el-icon-close:before {
+                content: "\E6DB";
+                display: inline-block;
+                width: 20px;
+                border: 1px solid #878EA1;
+                height: 20px;
+                /* background: #878EA1; */
+                border-radius: 10px;
+                /* background: red; */
+                vertical-align: middle;
+                line-height: 20px;
+            }
+            /* 自定义全局删除弹出框的样式 */
+            
+            .deleteoutline /deep/ .el-dialog__footer .dialog-footer .el-button {
+                font-size: 14px;
+                color: #878ea1;
+                padding: 10px 20px;
+            }
+            
+            .deleteoutline /deep/ .el-dialog__body {
+                padding: 15px 20px;
+            }
+            
+            .deleteoutline /deep/ .el-dialog__footer {
+                border: 1px solid #e5e9f6;
+                padding: 16px 20px 16px;
+            }
+            
+            .deleteoutline /deep/ .el-dialog__footer .dialog-footer .el-button {
+                font-size: 14px;
+                color: #878ea1;
+                padding: 10px 20px;
+            }
+            
+            .deleteoutline /deep/ .el-dialog__footer .dialog-footer .el-button--primary {
+                background: #7b7de5;
+                border: 1px solid #e5e9f6;
+                font-family: PingFangSC-Medium;
+                font-size: 14px;
+                color: #ffffff;
+            }
+            
+            .seemStyle /deep/ .el-icon-upload-success.el-icon-circle-check:before {
+                content: ""!important;
+            }
+            
+            .seemStyle /deep/ .el-upload-list__item i.el-icon-upload-success:before {
+                content: ""!important;
+            }
+            
+            .seemStyle /deep/ .el-upload-list__item.is-success .el-upload-list__item-name:hover {
+                color: #606266
+            }
+            
+            .el-dialog.addCart {
+                border-radius: 8px;
+            }
+            
+            .el-dialog__header {
+                border: 1px solid #e5e9f6;
+                padding: 12px 20px 10px 10px;
+                border-radius: 8px 8px 0px 0px;
+                font-weight: 600;
+            }
+            
+            .el-dialog__footer {
+                border-radius: 0px 0px 8px 8px;
+            }
+            
+            .el-dialog__title {
+                color: #878ea1;
+                font-size: 15px;
+            }
+            
+            .projectMsg /deep/ .el-input .el-input__inner {
+                margin-bottom: 5px;
+            }
+            
+            .project /deep/ .el-dialog__body .el-form .productVideo .pNumbers {
+                padding-top: 10px!important;
+            }
+            
+            .project /deep/ .el-dialog__body .el-form .el-textarea>.el-textarea__inner {
+                height: 100px;
+            }
+            
+            .el-textarea__inner:focus,
+            .el-textarea__inner:hover,
+            .el-input__inner:focus,
+            .el-input__inner:hover,
+            .el-select:hover .el-input__inner,
+            .el-select .el-input.is-focus .el-input__inner {
+                outline: 0;
+                border-color: #7B7DE5;
+            }
+            
+            .upload-demo .el-upload .el-button {
+                padding: 7px 6px!important
+            }
+            
+            .upload-demo .el-upload .el-button--primary:hover {
+                background: #fff;
+                box-shadow: none;
+                border: 1px solid #dcdfe6;
+            }
+            
+            .el-form-item.is-success .el-input__inner,
+            .el-form-item.is-success .el-textarea__inner {
+                border-color: #e5e9f6;
+            }
+            
+            .el-form-item.is-success .el-input__inner:hover,
+            .el-form-item.is-success .el-input__inner:focus,
+            .el-form-item.is-success .el-textarea__inner:hover,
+            .el-form-item.is-success .el-textarea__inner:focus {
+                border-color: #7B7DE5;
+            }
+            
+            .dialog-footer {
+                text-align: center;
+            }
+            
+            .el-dialog__body>div>p {
+                text-align: center;
+            }
+            
+            .task .taskSort /deep/ .addCart {
+                height: 40px!important;
+                line-height: 40px!important;
+                font-size: 15px;
+                vertical-align: middle;
+            }
+            
+            .task .taskSort .addCart>i {
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+            
+            .task .taskSort .addCart /deep/ .el-icon-circle-plus-outline:before {
+                content: "\E723";
+                font-size: 20px;
+                vertical-align: middle;
+                /* margin-top: -10px; */
+            }
+            
+            .task .taskSort /deep/ .grid-content .contents {
+                color: #3B404F;
+            }
+            /*编辑任务页面对齐*/
+            
+            .task /deep/ .el-dialog__body .el-form .mgb,
+            .addCart /deep/ .el-dialog__body .seemStyle,
+            .addCart /deep/ .el-dialog__body .seemStyle>.seemicon {
+                margin-left: 0px!important;
+                padding-left: 0px!important;
+            }
+            
+            .addCart /deep/ .el-dialog__body .seemStyle.tasktime>.seemicon {
+                padding-right: 0px!important;
+            }
+            
+            .addCart /deep/ .el-dialog__body .seemStyle.tasktime>.el-row {
+                margin-left: -3px!important;
+            }
+            
+            .taskinput>.el-form-item__label {
+                width: 65px!important;
+                padding-right: 0px!important;
+            }
+            
+            .taskinput>.el-form-item__content {
+                margin-left: 65px!important;
+            }
+            
+            .task /deep/ .el-form-item__label {
+                text-align: left;
+            }
+            
+            .upload-demo .el-button i.el-icon-circle-plus-outline {
+                /* font-size: 17px; */
+                display: inline-block;
+                margin-top: -2px;
+                vertical-align: middle;
+            }
+            
+            .upload-demo .el-button span {
+                vertical-align: middle;
+                font-weight: inherit;
+            }
+            /* 统一样式*/
+            /*分页*/
+            
+            .pagination .el-input__inner {
+                padding: 3px 4px;
+            }
+            
+            .pagination .el-pager .number {
+                border: 1px solid #878EA1!important;
+                border-radius: 4px;
+                border-radius: 4px;
+                margin-left: 5px;
+                font-weight: initial;
+            }
+            
+            .pagination .el-pagination.is-background .btn-next,
+            .pagination .el-pagination.is-background .btn-prev,
+            .pagination .el-pagination.is-background .el-pager li {
+                background: #fff;
+            }
+            
+            .pagination /deep/ .el-pager li.active {
+                background: #7B7DE5!important;
+                border: 1px solid #7B7DE5!important;
+                font-family: PingFangSC-Medium;
+                /* font-size: 18px; */
+                color: #FFFFFF!important;
+            }
+            
+            .pagination .el-pager li.btn-quicknext,
+            .pagination .el-pager li.btn-quickprev,
+            .pagination.el-icon.more.btn-quicknext.el-icon-more {
+                border: 1px solid #878EA1;
+                border-radius: 4px;
+                border-radius: 4px;
+                margin-left: 5px;
+            }
+            
+            .pagination .el-pagination button:disabled,
+            .pagination .el-pagination button:disabled:hover {
+                border: 1px solid #878ea1!important;
+                background: #ffffff!important;
+                color: #484d5e!important;
+                border-radius: 4px;
+                border-radius: 4px;
+                margin-left: 5px;
+            }
+            
+            .pagination .el-pagination .btn-next,
+            .pagination .el-pagination .btn-prev,
+            .el-pagination__editor.el-input .el-input__inner {
+                border: 1px solid #878EA1;
+                border-radius: 4px;
+                margin-left: 5px;
+                color: #303133;
+            }
+            
+            .pagination .el-pager li:hover,
+            .pagination .el-pagination button:hover {
+                background: #7B7DE5!important;
+                border: 1px solid #7B7DE5!important;
+                font-family: PingFangSC-Medium;
+                /* font-size: 18px; */
+                color: #FFFFFF!important;
+            }
+            
+            .pagination .el-input.el-input--mini.el-input--suffix.is-focus,
+            .pagination .el-pagination__sizes .el-input .el-input__inner:hover,
+            .pagination .el-select .el-input.is-focus .el-input__inner,
+            .el-pagination__editor.el-input .el-input__inner:hover,
+            .pagination .el-select .el-input:hover {
+                border-color: #7B7DE5;
+            }
+            
+            .pagination .el-select .el-input {
+                outline: 0;
+                border-radius: 4px;
+                border: 1px solid #878EA1;
+            }
+            
+            .pagination .el-select .el-input__inner:focus,
+            .pagination .el-input.el-input--mini.el-input--suffix:hover .el-input__inner:hover,
+            .pagination .el-input.el-input--mini.el-input--suffix.is-focus .el-input__inner,
+            .pagination .el-input.el-input--mini.el-input--suffix:focus .el-input__inner:hover {
+                outline: 0;
+                border-radius: 4px;
+                border: none;
+            }
+            /*自定义表格样式*/
+            
+            .el-table--enable-row-hover .el-table__body tr:hover>td {
+                background-color: #ECEDFB;
+            }
+            
+            .actionLog /deep/ .has-gutter tr,
+            .actionLog /deep/ .has-gutter th {
+                padding: 10px 0px;
+            }
+            
+            .actionLog /deep/ .has-gutter .cell {
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #3B404F;
+                font-weight: initial;
+            }
+            
+            .actionLog /deep/ .el-table__row td .cell>span,
+            .actionLog /deep/ .el-table__row td .cell {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #505565;
+            }
+            
+            .el-pagination .el-select .el-input .el-input__inner {
+                color: #303133;
+            }
+            
+            .list_page.pagination {
+                text-align: right!important;
+                padding-top: 13px!important;
+                padding-right: 30px!important;
+                height: 44px!important;
+                background: #fff;
+            }
+            
+            .el-pagination .el-pagination__editor.el-input {
+                margin-right: 10px;
+            }
+            /* .actionLog /deep/ .el-table__body-wrapper .el-table_1_column_1 .cell,
+            .actionLog /deep/ .has-gutter .el-table_1_column_1 .cell {
+                padding-left: 30px;
+            } */
+            
+            .actionLog /deep/ .el-table thead {
+                opacity: initial!important;
+            }
+            
+            .el-button:focus,
+            .el-button:hover {
+                color: #409EFF;
+                border-color: inherit;
+                background-color: inherit;
+                border: 1px solid #E5E9F6;
+            }
+            
+            .el-input__inner {
+                color: inherit!important;
+            }
+            
+            .el-input .el-input__inner {
+                height: 35px;
+                line-height: 35px;
+            }
+            
+            .el-input--mini .el-input__inner {
+                height: 35px;
+                line-height: 35px;
+            }
+            /* 定义全局的进度条的样式 */
+            /*重写全局的弹框样式*/
+            
+            .mydialog /deep/ .el-dialog__header {
+                padding: 12px 20px 10px 10px;
+                height: 24px;
+            }
+            
+            .mydialog /deep/ .el-dialog__title {
+                color: #878ea1;
+                font-size: 15px;
+                line-height: 24px;
+                /* margin-left: 55px; */
+            }
+            /* .mydialog /deep/ .el-dialog__headerbtn {
+                top: 14px;
+            } */
+            
+            .mydialog /deep/ .el-dialog .el-dialog__body {
+                padding: 15px 20px;
+            }
+            
+            .mydialog /deep/ .dialog-footer {
+                text-align: center;
+            }
+            
+            .mydialog /deep/ .el-dialog .el-dialog__footer .dialog-footer .el-button {
+                font-size: 14px;
+                color: #878ea1;
+                padding: 10px 20px;
+            }
+            
+            .mydialog /deep/ .el-button:focus,
+            .mydialog /deep/ .el-button:hover {
+                color: #409eff;
+                border-color: inherit;
+                background-color: inherit;
+                border: 1px solid #e5e9f6;
+            }
+            
+            .mydialog /deep/ .el-dialog .el-dialog__footer .dialog-footer .el-button:first-child+.el-button {
+                font-family: PingFangSC-Medium;
+                font-size: 14px;
+                color: #ffffff;
+            }
+            
+            .mydialog /deep/ .el-dialog .el-dialog__footer .dialog-footer .el-button--primary {
+                background: #7b7de5;
+                border: 1px solid #e5e9f6;
+            }
+            
+            .mydialog /deep/ .el-dialog .el-dialog__footer {
+                border: 1px solid #e5e9f6;
+                padding: 16px 20px 16px;
+            }
+            
+            .mydialog /deep/ .el-input__inner {
+                height: 35px;
+            }
+            
+            .el-dialog .el-dialog__footer .dialog-footer .el-button--primary:hover {
+                box-shadow: none;
+            }
+            /*项目报告*/
+            
+            .dialoginline {}
+            
+            .dialogoutline>div {
+                margin-bottom: 5px;
+                padding-top: 5px;
+            }
+            /*弹框中的表格*/
+            
+            .dialogoutline>div /deep/ .el-table--fit {
+                border: 1px solid #e5e9f6;
+            }
+            
+            .dialogoutline>div /deep/ th.is-leaf {
+                background: #ccc;
+            }
+            
+            .dialogoutline>div p span {
+                display: inline-block;
+            }
+            
+            .dialogoutline>div p span:first-child {
+                font-family: PingFangSC-Medium;
+                margin-right: 20px;
+                font-size: 16px;
+                color: #3b404f;
+            }
+            
+            .dialogoutline>div p span:first-child+span {
+                width: 500px;
+            }
+            
+            .dialogoutline>div p span:first-child+span /deep/ .el-progress-bar__outer {
+                height: 10px !important;
+            }
+            
+            .dialogoutline>div p span:first-child+span /deep/ .el-progress__text {
+                display: none;
+            }
+            
+            .dialogoutline>div p span:first-child+span /deep/ .el-progress-bar__inner::after {
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                background: #ffffff;
+                margin-top: -9px;
+                margin-right: 1px;
+            }
+            
+            .dialogoutline p {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #878ea1;
+                line-height: 24px;
+            }
+            
+            .dialogoutline p.title {
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                line-height: 22px;
+                color: #3b404f;
+                /* font-weight: 600; */
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            
+            .dialogoutline p:first-child.title span {
+                font-weight: initial;
+            }
+            /*任务状态*/
+            
+            .numberimg {
+                position: absolute;
+                top: 6px;
+                left: 20px;
+                height: 35px;
+                width: 35px;
+                background: red;
+                border-radius: 50%;
+            }
+            
+            .numberimg img {
+                display: inline-block;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+            }
+            
+            .taskstatus {
+                padding-top: 5px;
+            }
+            
+            .taskstatus span {
+                display: inline-block;
+                border-radius: 2px;
+                width: 100px;
+                height: 27px;
+                margin-right: 5px;
+                text-align: center;
+                font-family: PingFangSC-Medium;
+                font-size: 14px;
+                line-height: 27px;
+                color: #ffffff;
+                background: #64dbb7;
+            }
+            
+            .list_page /deep/ .el-input--mini .el-input__inner {
+                height: 20px;
+                line-height: 20px;
+                border: none!important;
+            }
+            /*自定义弹出框css样式*/
+            
+            .el-dialog__body .el-input .el-input__inner,
+            .el-dialog__body .el-textarea__inner,
+            .el-icon-date:before {
+                font-size: 15px;
+            }
+            
+            .el-dialog__body .el-input .el-input__inner::placeholder,
+            .el-dialog__body .el-textarea .el-textarea__inner::placeholder {
+                font-size: 14px;
+                font-family: initial!important;
+                color: #878EA1!important;
+                font-weight: initial!important;
+            }
+            
+            .el-dialog__header {
+                padding-left: 20px!important
+            }
+            
+            .el-dialog__header .el-dialog__title,
+            .el-dialog__body .el-form-item__label {
+                color: #3B404F!important;
+            }
+            
+            .el-dialog__header .el-icon-close:before {
+                content: "";
+                border: none;
+            }
+            
+            .el-dialog__header .el-icon-close {
+                width: 20px;
+                height: 20px;
+                /* margin-right: 8px; */
+                margin-top: -15px;
+                vertical-align: middle;
+                background: url(../../src/assets/images/common/dialogclose.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            
+            .el-dropdown-menu__item:focus,
+            .el-dropdown-menu__item:not(.is-disabled):hover {
+                /* background: #7B7DE5; */
+                /* color: #7B7DE5!important; */
+                list-style: none!important;
+                line-height: 36px!important;
+                padding: 0 20px!important;
+                margin: 0!important;
+                font-size: 14px!important;
+                color: #606266!important;
+                cursor: pointer!important;
+                outline: 0!important;
+            }
+            
+            .el-dropdown-menu__item:focus,
+            .el-dropdown-menu__item:not(.is-disabled):hover {
+                background: #ecedfb;
+                font-family: PingFangSC-Regular
+            }
+            
+            .el-checkbox__input .el-checkbox__inner {
+                /* border: 1px solid #7b7de5!important; */
+            }
+            
+            .el-checkbox__input.is-checked .el-checkbox__inner,
+            .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+                background-color: #7b7de5!important;
+                border-color: #7b7de5!important;
+            }
+            
+            .el-checkbox__input.is-disabled .el-checkbox__inner::after {
+                border-color: none!important;
+            }
+            
+            .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+                /* border: initial!important; */
+                /* border-color: #7b7de5 */
+                border-color: #fff!important;
+            }
+            
+            .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+                opacity: 0.5;
+            }
+            
+            .el-radio__input.is-checked .el-radio__inner {
+                background-color: #7b7de5!important;
+                border-color: #7b7de5!important;
+            }
+            
+            .el-radio__input.is-checked+.el-radio__label {
+                color: #7b7de5;
+            }
+            
+            .el-icon-time:before {
+                font-size: 15px;
+                content: "\E78E";
+            }
+            
+            .mydialog /deep/ .el-dialog__headerbtn {
+                top: 20px!important;
+            }
+            
+            .edittaskdialog /deep/ .el-dialog__headerbtn {
+                top: 20px!important;
+            }
+            
+            .edittaskdialog /deep/ .el-dialog__body .dialogdropdown {
+                top: 12px!important;
+            }
+            
+            .el-dialog {
+                border-radius: 6px;
+            }
+            
+            .el-dialog__header {
+                border: none!important;
+                border-bottom: 1px solid #e5e9f6!important;
+            }
+            
+            .el-dialog__footer {
+                border: none!important;
+                border-top: 1px solid #e5e9f6!important;
+            }
+            
+            .el-select-dropdown__item {
+                color: #606266;
+            }
+            
+            .el-select-dropdown__item:hover,
+            .el-select-dropdown__item.hover {
+                color: #606266;
+                background: #ecedfb;
+            }
+            
+            .el-select-dropdown__item.selected {
+                color: #606266;
+                background: #ecedfb;
+                font-weight: initial;
+                /* font-family: PingFangSC-Regular; */
+            }
+            /*自定义checkbox相关内容*/
+            
+            .el-checkbox__input.is-checked+.el-checkbox__label {
+                color: #606266;
+            }
+            
+            .el-table .cell span {
+                display: inline-block;
+                word-break: keep-all;
+            }
+            
+            .el-dialog__headerbtn {
+                top: 14px;
+            }
+            
+            .el-dialog__header .el-icon-close {
+                margin-top: 0px;
+            }
+            
+            .mydialog /deep/ .el-dialog__header .el-icon-close {
+                margin-top: -15px;
+            }
+            
+            .el-select-dropdown.el-popper {
+                margin-top: 0px!important;
+                padding: 0px!important;
+            }
+            
+            .popper__arrow {
+                display: none!important;
+            }
+            
+            .upload-demo .el-upload .el-button {
+                padding: 8px 6px!important;
+                font-size: 14px;
+            }
+            
+            .el-icon-circle-plus-outline:before {
+                content: "\E723";
+                font-size: 17px;
+            }
+            
+            .upload-demo .el-button i.el-icon-circle-plus-outline {
+                display: inline-block;
+                margin-top: initial;
+            }
+            
+            .el-message {
+                min-width: auto;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
