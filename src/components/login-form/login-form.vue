@@ -129,7 +129,7 @@ p.titlenew span.titleimg{
       <el-input type="password" placeholder="请输入密码" v-model="ruleForm.password" autocomplete="off"></el-input>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
+      <el-button type="primary" @click="submitForm('ruleForm')">登录1</el-button>
       <span class="forgetpass">忘记密码？</span>
       <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
     </el-form-item>
