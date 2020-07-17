@@ -9,7 +9,7 @@
   <div class="login">
     <div class="login-con1"></div>
     <div class="login-con">
-      <p>欢迎登录</p>
+      <p>欢迎登录22</p>
       <p>WELCOME TO ROCK YOUR TEAE</p>
       <div icon="log-in">
         <div class="form-con">
